@@ -1,0 +1,20 @@
+-------------------------------------------- PHP Orienté Objet  -------------------------------------------------
+
+J1 :
+01 - classes - objet - instance - visibilité
+02 - getter - setter - constructeur - this
+03 - manipulation - type - argument
+04 - constante - static - self
+
+J2 :
+05 - héritage (notion essentielle que l'on retrouve dans tous les langages en objet)
+06 - surcharge - abstraction - finalisation - interface - trait (chapitre très abstrait - doliprane conseillé)
+07 - namespace (comment travailler à plusieurs dev* sur un même projet)
+08 - autoload (éviter de faire des dizaines de 'require')
+09 - méthodes - magiques (quelques fonctions utiles existant dans le PHP POO)
+10 - classes - existantes (les classes qui existent déjà dans le langage)
+11 - PDO (déjà fait avec Christophe)
+12 - MVC (models controllers views = modèle (SQL) vue (HTML/CSS) controleur (PHP))
+
+J3 - 4 :
+13 - boutique (miniframework maison basé sur la logique de symfony)

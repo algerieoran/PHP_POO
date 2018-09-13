@@ -1,0 +1,24 @@
+-------------------------------------------------
+EXPLICATION MINI-RAMEWORK
+------------------------------
+
+Arborescence :
+-----------------
+    app/ : La configuration de notre application
+    src/ : Le Code PHP et HTML spécifique à notre projet
+    vendor/ : Code général (coeur) de l'application
+    web/ : Repertoire web racine, point d'entrée de notre application (index.php, img/, photo/, js/, fonts/). Les assets (ressources).
+
+
+Nature des différents fichiers :
+---------------------------------
+
+app/
+    /Config
+        parametres.php : Contient toutes les informations de connexion à la BDD .... et autres parametres
+
+
+    config.php : Contient la class Config, dont l'objectif est de récupérer les parametres et de les servir...
+
+
+    
