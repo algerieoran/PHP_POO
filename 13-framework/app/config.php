@@ -17,7 +17,7 @@ class Config
     }
 }
 //----------------
-$config = new Config;
-echo '<pre>';
-print_r ($config -> getParametersConnect());
-echo '</pre>';
+// $config = new Config;
+// echo '<pre>';
+// print_r ($config -> getParametersConnect());
+// echo '</pre>';

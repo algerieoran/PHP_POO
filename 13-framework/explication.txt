@@ -21,4 +21,17 @@ app/
     config.php : Contient la class Config, dont l'objectif est de récupérer les parametres et de les servir...
 
 
-    
+Vendor/
+    autoload.php : ce fichier permet d'inclure (require) les bons fichiers lors des instanciations. Lorsqu'on va créer  un objet l'autoload va se charger d'inclure la classe necessaire.
+
+src/
+    Entity/
+        Produit.php/ Membre.php / Commande.php : ces slasses contiennent toutes les propriétés (private) de nos entités + les getters et les setters. Ce sont les plans de fabrication de nos entités. On les appelle des POPO (Plain Old PHP Object).
+
+web/
+    index.php : Clé d'entrée de notre application (app.php ou app_dev.php)
+
+vendor/
+    Manager/
+        PDOManager : Cette classe représente la connexion à la BDD. Elle contient et nous retourne notre objet PDO, grâce auquel nous pourrons exécuter des requêtes SQL.
+        Cette classe est un singleton. Cela signifie qu'il ne peut y avoir qu'un seul objet issu de cette classe
