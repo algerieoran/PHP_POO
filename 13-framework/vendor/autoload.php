@@ -14,11 +14,11 @@ class Autoload
 
         $tab = explode ('\\', $className);
         if(
-            ($tab[0] == 'Manager') ||
+            $tab[0] == 'Manager' ||
             ($tab[0] == 'Controller' && $tab[1] == 'Controller' ) ||
-            ($tab[0] == 'Repository' && $tab[1] == 'Repository')
+            ($tab[0] == 'Repository' && $tab[1] == 'EntityRepository')
         ){
-            $path = __DIR__. '/' . implode('/', $tab) . '.php';
+            $path = __DIR__ . '/' . implode('/', $tab) . '.php';
         }
         else 
         {

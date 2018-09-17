@@ -35,3 +35,32 @@ vendor/
     Manager/
         PDOManager : Cette classe représente la connexion à la BDD. Elle contient et nous retourne notre objet PDO, grâce auquel nous pourrons exécuter des requêtes SQL.
         Cette classe est un singleton. Cela signifie qu'il ne peut y avoir qu'un seul objet issu de cette classe
+
+    Repository/
+        EntityRepository.php : Ce fichier centralise tout ce qui touche à la base de données. Les repository servent à effectuer des requêtes SQL. Ce fichier est le parent de Repository, il gère la connexion à la BDD et les requêtes génériques.
+
+
+src/
+    Repository/
+        ProduitRepository.php : Ce fichier contiendera toutes les fonctions lié à l'entité Produit, et "demandera" à EntityRepository de faire certaines enquêtes. On ne codera dans ce repository que les requêtes qui lui sont propres.
+
+
+vendor/
+    Controller/
+        Controller.php : C'est le controller général de l'application. il a deux missions : 
+            1/ Récupérer le repository correspondant à l'intité dans laquelle nous sommes (getRepository())
+            2/ Afficher la vue correspondant à l'action en cours.
+
+
+src/
+    Controller/
+        ProduitController.php : Cette class hérite du controller général, et permet de déclancher toutes les actions liéer à l'entité Produit.
+
+
+web/
+    Copier et coller de puis la boutique en procédural: photo/ (css/, js/, font/, img/ etc...)
+
+src/
+    View/
+        Produit/
+            Copier et coller depuis phpoo/12-mvc : boutique.php, fiche_produit.php
