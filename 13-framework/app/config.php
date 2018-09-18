@@ -15,6 +15,10 @@ class Config
         return $this -> parameters ['connect'];
         // cette fonction va retourner seulement la partie 'connect' de parameters
     }
+
+    public function getParametersUrl() {
+        return $this -> parameters['url'];
+    }
 }
 //----------------
 // $config = new Config;

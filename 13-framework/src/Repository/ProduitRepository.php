@@ -66,7 +66,7 @@ class ProduitRepository extends EntityRepository
 
     }
 
-    public function getAllSuggestions(Produit $produit) {
+    public function getAllSuggestions(\Entity\Produit $produit) {
 
         $prix = $produit -> getPrix();
         $categorie = $produit -> getCategorie();
@@ -76,16 +76,16 @@ class ProduitRepository extends EntityRepository
         $prix_min = $prix - (30*$prix/100);  // 70% du prix initial
         $prix_max = $prix + (30*$prix/100);  // 130% du prix initial
 
-        $requet = "
+        $requete = "
         SELECT *
         FROM produit
         WHERE categorie = '$categorie'
-        AND prix BETEEN $prix_min AND $prix_max
+        AND prix BETWEEN $prix_min AND $prix_max
         AND public = '$public'
         AND id_produit != $id_produit
-
         ";
-        $resultat = $this -> getDb() -> query($requet);
+
+        $resultat = $this -> getDb() -> query($requete);
         $resultat -> setFetchMode(PDO::FETCH_CLASS, 'Entity\Produit');
         $data = $resultat -> fetchAll();
 

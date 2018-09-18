@@ -3,8 +3,20 @@ session_start ();
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-// $app = new Manager\Application;
-// $app -> run();
+$app = new Manager\Application;
+$app -> run();
+
+//index.php/ produit  /  afficheall
+//index.php/ produit  /  affiche  / 12
+//index.php/ produit  /  categorie  /  pull
+
+//www.monsite.com/produit/afficheall
+
+// $tab = explode('/', $_SERVER['REQUEST_URI']);
+
+// echo '<pre>';
+//     print_r ($tab);
+// echo '</pre>';
 
 
 //Test 1 : Entity
@@ -93,5 +105,7 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 
 //Test 5 : ProduitController
 
-$pc = new Controller\ProduitController;
-$pc -> afficheall();
+// $pc = new Controller\ProduitController;
+// //$pc -> afficheall();
+// $pc -> affiche(12);
+
