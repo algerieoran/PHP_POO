@@ -13,7 +13,7 @@ class EntityRepository
 
     public function __construct(){
         $this-> db = PDOManager::getInstance() -> getpdo();
-        // Cette ligne permet de stocher la connexion à la BDD dans $db, directement à l'instanciation.
+        // Cette ligne permet de stocker la connexion à la BDD dans $db, directement à l'instanciation.
     }
 
     public function getDb() {

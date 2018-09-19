@@ -33,7 +33,7 @@ class Avion implements Mouvement {
 }
 
 /*
-Commentaires :
+    Commentaires :
 
     - Une interfce est une liste de méthode sans contenu, qui permet de garantir que toutes les classes vont implémenter l'interface contiendront les mêmes noms de méthodes.
     C'est une sorte de contrat qui est passé entre le lead dev' et les autres dev'. C'est un plan de fabrication d'une classe.
