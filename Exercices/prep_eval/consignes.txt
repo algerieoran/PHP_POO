@@ -1,0 +1,21 @@
+Exercice 1 : AJAX
+    Ajouter un nouvel employe en AJAX
+        prenom, nom, sexe, service, salaire
+		
+Exercice 2 : SQL (BDD Bibliotheque)
+	Dans un fichier ecrire une requete (jointure) permettant d'afficher toutes personnes ayant emprunté le livre une vie de Guyde Maupassant: 
+		- prenom - auteur - titre du livre - date d'emprunt 	- date de renu
+
+Exercice 3 : Créer une classe
+	Créer une classe Vehicule avec les proriétés suivantes : 
+		Marque (string de 3 à 30 caractères)
+		Modèle (string de 3 à 30 caractères)
+		année  (INT de 4 caracteres)
+		couleur (string de 3 à 30 caractères) 
+		km (INT de 1 à 6 caractère
+		
+		Ajouter une fonction getInfos permettant de récupérer toutes les infos d'un objet Vehicule sous forme d'une array
+		
+		Dans un autre fichier, instancier la classe, créer 3 véhicule différent et afficher leur infos grâce à la méthode getInfos();
+		
+Exercice 4 : Récupérer le fichier exercice4.php (sur Slack), et corriger les Bugs
